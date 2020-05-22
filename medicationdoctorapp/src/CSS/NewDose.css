@@ -1,0 +1,149 @@
+.new-dose {
+    width:440px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.select-amount {
+    display:block;
+    width:100%;
+    max-width:70px;
+    
+    padding:0;
+    margin-right:20px;
+
+    background-color:white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    background: none;
+}
+
+.select-amount select:focus {
+    outline:0;
+}
+
+.select-amount select {
+    -webkit-appearance: none;
+    appearance: none;
+
+    float: left;
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding:5px 10px;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+
+    box-shadow: none !important;
+    background: none;
+
+    cursor: pointer;
+}
+
+.time-picker {
+    position:relative;
+    left: 0;
+    display: flex;
+    margin-left:10px;
+
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    max-width: 70px;
+    color: black;
+
+    padding: 0;
+    margin-right:auto;
+
+    user-select:none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin:0;
+}
+
+.hour, 
+.minute {
+    position: relative;
+    margin:0;
+    text-align: center;
+    display: flex;
+    justify-content: stretch;
+    align-items:stretch;
+}
+
+.hour .hr,
+.minute .min {
+    background: none;
+    font-size:1em;
+    appearance:none;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.time-picker .hour .hr-up,
+.time-picker .hour .hr-down,
+.time-picker .minute .min-up,
+.time-picker .minute .min-down {
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+    cursor: pointer;
+}
+
+.time-picker .hour .hr-up,
+.time-picker .minute .min-up {
+    top: -7px;
+    border-bottom: 5px solid black;
+}
+
+.time-picker .hour .hr-down,
+.time-picker .minute .min-down {
+    bottom: -7px;
+    border-top: 5px solid black;
+}
+
+.time-picker .hour .hr-up:hover,
+.time-picker .hour .hr-down:hover,
+.time-picker .minute .min-up:hover,
+.time-picker .minute .min-down:hover {
+    border-bottom-color: lightgray;
+    border-top-color: lightgray;
+}
+
+.time-picker .hour .hr-up:after,
+.time-picker .hour .hr-down:after,
+.time-picker .minute .min-up:after,
+.time-picker .minute .min-down:after {
+    content:'';
+    position:absolute;
+    top:-10px; bottom:-10px; 
+    left:-10px; right:-10px; 
+}
+
+.remove-element {
+    background-color: none;
+    border:none;
+    border-radius:5px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin:0;
+}
